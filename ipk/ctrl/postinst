@@ -1,0 +1,11 @@
+#! /bin/sh
+if [ $(grep "npwdata.sh" /etc/init.d/rcS | wc -l) == 0 ]
+then
+
+	cp /etc/init.d/rcS /etc/init.d/.rcS.npw.bak
+	echo "/etc/npwdata.sh" >>/etc/init.d/rcS
+fi
+
+
+exit 0
+

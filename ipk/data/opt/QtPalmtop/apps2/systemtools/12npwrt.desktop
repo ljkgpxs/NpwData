@@ -1,0 +1,10 @@
+[Desktop Entry]
+Exec=npwrt
+Icon=static/desktop/wrt
+ForcusIcon=static/desktop/wrt
+Type=Application
+Name=Writer
+Comment=V1.1 20130225
+Name[zh_CN]=烧写器
+Comment[zh_CN]=V1.1 20130225
+WifiCheck = 0

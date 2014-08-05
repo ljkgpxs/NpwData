@@ -1,0 +1,40 @@
+#! /bin/sh
+
+qmb="/opt/QtPalmtop/bin/qmsgbox"
+
+error()
+{
+
+	$qmb 3 5 0 0 "错误" "口令错误!!"
+	exit 2
+}
+
+
+ret=`$qmb 1 1 5 3 "获取" "口令1"`
+if [ $ret != 5 ]
+then
+	error
+fi
+
+ret=`$qmb 1 1 2 3 "获取" "口令2"`
+if [ $ret != 3 ]
+then
+	error
+fi
+
+ret=`$qmb 1 1 7 4 "获取" "口令3"`
+if [ $ret != 1 ]
+then
+	error
+fi
+
+ret=`$qmb 1 6 5 7 "获取" "口令4"`
+if [ $ret != 0 ]
+then
+	error
+fi
+
+
+exit 0
+
+

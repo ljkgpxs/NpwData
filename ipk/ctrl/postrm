@@ -1,0 +1,7 @@
+#! /bin/sh
+
+
+cp /etc/init.d/.rcS.npw.bak /etc/init.d/rcS
+
+exit 0
+

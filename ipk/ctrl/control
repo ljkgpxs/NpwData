@@ -1,0 +1,13 @@
+Package:NpwData
+Priority:optional
+Version:1.1
+Architecture:all
+Author:Ljk
+Maintainer:Ljk zhiyb
+Sponsor:Ljk
+Source:club.noahedu.com
+Homepage:club.noahedu.com
+Section:application
+Depends:
+Installed-Size:1024kb
+Description:A Application To Check NOAH SD Key

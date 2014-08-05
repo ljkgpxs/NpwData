@@ -1,0 +1,17 @@
+#! /bin/sh
+
+/opt/QtPalmtop/bin/pwps
+if [ $? != 0 ]
+then
+	exit 2
+fi
+
+
+qmb="/opt/QtPalmtop/bin/qmsgbox"
+
+$qmb 1 1 0 0 "个人信息" "本机序列号: `/bin/getser 599 1`
+个人密码: `/bin/getser 599 2`"
+exit 0
+
+
+

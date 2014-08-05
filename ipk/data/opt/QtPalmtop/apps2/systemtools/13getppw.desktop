@@ -1,0 +1,10 @@
+[Desktop Entry]
+Exec=getppw
+Icon=static/desktop/perinfo
+ForcusIcon=static/desktop/perinfo
+Type=Application
+Name=GetInfo
+Comment=V1.1 20130225
+Name[zh_CN]=个人信息
+Comment[zh_CN]=V1.1 20130225
+WifiCheck = 0

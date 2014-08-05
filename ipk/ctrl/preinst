@@ -1,0 +1,28 @@
+#! /bin/sh
+
+
+qmb="/opt/QtPalmtop/bin/qmsgbox"
+
+if [ -f /bin/checkey ]
+then
+	echo "You Have Installed"
+	ret=`$qmb 11 "是(卸载)" "否(重新安装)" "默认(重装)" 2 1 "提示" "您已安装NpwData!!
+是否卸载??"`
+	if [ $ret == 0 ]
+	then
+		$qmb 1 0 0 0 "提示" "正在卸载......
+卸载完毕后将自动重启" &
+		sleep 2s
+		/opt/QtPalmtop/bin/npwuns	
+		sync
+#		$qmb 1 1 0 0 "提示" "按Ok重启!!"
+		sleep 1s
+		reboot
+	else
+		exit 0
+	fi
+else
+	exit  0
+
+fi
+

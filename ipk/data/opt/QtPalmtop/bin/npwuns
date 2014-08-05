@@ -1,0 +1,26 @@
+#! /bin/sh
+
+mount -o remount rw /opt
+mount -o remount rw /
+mount -o remount rw /usr
+
+cp /etc/init.d/.rcS.npw.bak /etc/init.d/rcS
+
+rm /bin/getser
+rm /bin/wrt
+rm /bin/checkey
+rm /etc/npwdata.sh
+rm /lib/libnpwdata.so
+rm /opt/QtPalmtop/bin/getppw
+rm /opt/QtPalmtop/bin/pwps
+rm /opt/QtPalmtop/bin/npwuns
+rm /opt/QtPalmtop/bin/qmsgbox
+rm /opt/QtPalmtop/bin/npwrt
+rm /opt/QtPalmtop/pics/static/desktop/perinfo.png
+rm /opt/QtPalmtop/pics/static/desktop/wrt.png
+rm /opt/QtPalmtop/apps2/systemtools/13getppw.desktop
+rm /opt/QtPalmtop/apps2/systemtools/12npwrt.desktop
+rm /usr/include/npwdata.h
+rm /var/log/wrt
+
+
