@@ -1,5 +1,5 @@
 /*  Author :  Ljk
- *  Suppot :  GT Studio
+ *  Support :  GT Studio
  */
 
 
